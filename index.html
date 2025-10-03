@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Rotating PNG Widget</title>
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .rotate {
+      width: 200px;  /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      animation: spin 3s linear infinite;
+      /* 3s is the rotation duration; adjust for speed */
+    }
+    @keyframes spin {
+      from { transform: rotate(0deg);}
+      to { transform: rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+  <img class="rotate" src="C:\Users\Caitlin\Downloads\platte.png" alt="Rotating PNG">
+</body>
+</html>
